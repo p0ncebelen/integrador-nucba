@@ -84,7 +84,7 @@ width: 100%;
     text-align: center;
 }
 
-button{
+.buttonhdp button{
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -98,8 +98,9 @@ button{
     position: relative;
     overflow: hidden;
 }
-span{
+.buttonhdp span{
     background: #970000;
+    color: #fff;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -108,12 +109,69 @@ span{
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
+    
 }
-button:hover span{
+.buttonhdp button:hover span{
+    width: 100%;
+    
+  
+    
+}
+.buttonhdp  button:hover{
+    border:none;
+  
+}
+
+.buttonhdp a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.botoneshdps{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #970000;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+ .botoneshdps span{
+    background: #970000;
+    color: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+
+.botoneshdps:hover span{
     width: 100%;
 }
-button:hover{
+
+.botoneshdps:hover{
     border:none;
+    color: #fff;
+  
+}
+
+.botoneshdps a{
+   color: black;
+}
+
+.botoneshdps:hover a{
+    color: #fff;
 }
 
 h2{font-size: 2em;}
@@ -127,82 +185,553 @@ p{font-size: 1em;}
 
 #instituto .container{
     text-align: center;
-    padding: 100px 12px 100PX;
+    padding: 100px 12px 20vh;
+   
+}
+
+
+#instituto h2{
+    color: #970000;
+    margin-bottom: -40px;
+    font-size: 2.7em;
+    line-height: 20px;
+}
+
+#instituto h3{
+    color: #970000;
+    font-size: 2.2em;
+    line-height: 80px;
+    margin-top: 75px;
+    margin-bottom: -35px;
 }
 
 .container h2{
-    padding: 70px 12px;
+    padding: 90px 12px;
 }
 
-#nuestros-programas{
-    background-color: rgb(30, 30, 30);
-    color: #fff;
+.texto p{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    line-height: 50px;
     text-align: center;
 }
 
-#nuestros-programas .container{
-    padding: 100px 0px;
-}
-#nuestros-programas h2{
-    margin-top: 0;
-}
-#nuestros-programas p{
-   padding: 5px;
+
+
+#nuestros-programas .container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: -145px;
 }
 
-.carta button{
+.container .carta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    position: relative;
+}
+
+
+.carta .face{
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.carta .front{
+    transform: perspective(600px) rotateY(0deg);
+   
+}
+
+.carta .back{
+
+    transform: perspective(600px) rotateY(180deg);
+    background: #970000;
+    height: 51vh;
+    padding: 10;
+    margin-top: -30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+}
+
+.carta:hover .front{
+    transform: perspective(600px) rotateY(180deg)
+ }
+
+ .carta:hover .back{
+    transform: perspective(600px) rotateY(360deg)
+   
+}
+
+
+
+
+
+
+
+
+.botonesback {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.botonesback span{
+    background: #fff;
+    color: #970000;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonesback:hover span{
+    width: 100%;
+}
+
+.botonesback:hover{
+    border:none;
+    color: #970000;
+  
+}
+
+.botonesback a{
+   color: #fff;
+}
+
+.botonesback:hover a{
+    color: #970000;
+}
+
+
+
+.container .carta:hover{
+  transition: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0,0, 0.2);
+}
+
+.container .carta img {
+    width: 330px;
+    height: 210px;
+}
+
+.container .carta h3{
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.container .carta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
     margin-top: 10px;
 }
 
-
-
-footer{background-color: rgb(230, 230, 230);}
-footer p{
-    padding: 12px;
-margin: 0;
-color: rgb(100, 100, 100);
+.container .carta a {
+    font-weight: 500;
+    text-decoration: none;
+   
 }
-footer .container{
-    height: 150px;
+
+#level-test .container{
+    margin-top: 600px;
+    margin-right: 105px;
+    margin-bottom: -170px;
+}
+
+#level-test h3{
+    margin-top: 80px;
+    margin-left: 330px;
+}
+
+.sectioncaca{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
 }
 
-@media (min-width: 720px){
 
-#instituto .container {
+.calender {
+    padding:  20px;
+    box-shadow: 0 0 12px #ccc;
+}
+
+.month-week{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px;
+}
+
+.month-week span{
+    font-size: 13px;
+    margin-left: 5px;
+    background-color: #970000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.month-week span:last-child {
+    background-color: transparent;
+    color: #970000;
+    border: 1px solid #970000;
+
+}
+
+.weeks {
+   margin-bottom: 20px;
+}
+
+.weeks span{
+ padding: 20px ;
+ color: #970000;
+}
+
+
+
+.days {
+    display: flex;
+}
+
+.days span {
+  width: 14.30%;
+    text-align: center;
+    padding: 30px 20px;
+    cursor: pointer ;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.days span:not(.next-mont)::before{
+    content: "";
+    position: absolute ;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #970000;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.days span:not(.next-mont):hover{
+    color: #fff;
+}
+
+.days span:not(.next-mont):hover::before{
+    opacity: 1;
+}
+
+
+
+.next-mont{
+    color:#ccc !important;
+    cursor: not-allowed !important;
+}
+
+.fechas{
+    margin-top: 55px;
+    margin-bottom: 20px;
+    margin-left: 370px;
+    color: #970000;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #000000, #111eac );
+    color: #fff;
+    padding: 60px 0 30px;
+    border-top-left-radius: 200px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.ggg{
+margin-bottom: 100px;
+}
+
+.row{
+width: 85%;
+margin: auto;
 display: flex;
-justify-content: space-evenly;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
 }
 
-
-#instituto .texto{
-    padding: 0px 40px;
-    padding-left: 35px;
-    padding-right: 5px;
-width: 60%;
- max-width: 600px;
-text-align: initial;
-display: flex;
-justify-content: center;
-flex-direction: column;
+.col{
+flex-basis: 15%;
+padding: 10px;
 }
 
-#instituto .img-container{
-    background-image: linear-gradient(0deg,
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)
-    ), url(img/loloex.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 550px;
-}
+.col:nth-child(3) {
+    flex-basis: 10%;
+     }
+     
  
-footer .container{
-    justify-content: flex-end;
+
+.logito{
+width: 100px;
+margin-top: 5px;
+margin-bottom: 20px ;
+}
+
+.col h3{
+    position: relative;
+    margin-top: 50px;
+    width: fit-content;
+    margin-bottom: 50px;
+    
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ footer ul li{
+ list-style: none;
+ margin-bottom: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+ 
+}
+
+form input{
+
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+
+
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    
 }
 
 
+hr{
+    width:90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+
+}
+
+.copy{
+    text-align: center;
+
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+
+
+.social-icons img{
+
+   width: 45px;
+   margin-left: 3px;
+}
+
+.burger{
+    display: none;
+}
+
+.boton img{
+    width: 60px;
+    position: fixed;
+    height: 60px;
+    line-height: 55px;
+    bottom:40px;
+    right: 55px;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100%;
+    }
+} 
+
+
+@media screen and (max-width: 858px){
+    
+ .navbar{
+ height: 95px;
+ }
+
+ .burger{
+    display: flex;
+    
+}
+
+.burger img{
+    width: 100px;
+    margin-top: 15px;
+}
+
+.navbar ul li{
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 95px);
+    background: #111eac;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+}
+
+
+}
+
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+
+    .col{
+        flex-basis: 100%;
+        }
+        
+    .col:nth-child(3) {
+        flex-basis: 100%;
+        }
+             
+
+     #instituto h2{
+     color: #970000;
+     font-size: 2.7em;
+     line-height: 70px;
+     top: 30px;
+     }
+        
+     
+     #level-test .container{
+     height: 50vh;
+     margin-top: 290vh;
+     margin-right: 105px;
+     margin-bottom: -170px;
+     padding: 50px;
+     text-align: start;
+     
+     
+     }
+
+
+     #level-test  h4 h5{
+        padding: 20px;
+        line-height: 100px;
+        margin-bottom: auto;
+        margin-top: auto;
+       
+       }
+
+
+     #level-test h3{
+        width: 100%;
+        margin-left: auto;
+        padding-left: 50px;
+        text-align: center;
+     }
+
+     .sectioncaca{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+     }
+
+     
+}
+
+@media (max-width: 1200px){
+    #level-test .container{
+        margin-top: 190vh;
+    }
 }
